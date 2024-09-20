@@ -1,6 +1,8 @@
 # Export
 (*Export*)
 
+## Overview
+
 ### Available Operations
 
 * [Create](#create) - Create
@@ -52,13 +54,16 @@ func main() {
 | `request`                                                                                  | [shared.ExportServiceCreateRequest](../../pkg/models/shared/exportservicecreaterequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
 | `opts`                                                                                     | [][operations.Option](../../pkg/models/operations/option.md)                               | :heavy_minus_sign:                                                                         | The options for this request.                                                              |
 
-
 ### Response
 
 **[*operations.C1APISystemlogV1ExportServiceCreateResponse](../../pkg/models/operations/c1apisystemlogv1exportservicecreateresponse.md), error**
+
+### Errors
+
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
 | sdkerrors.SDKError | 4xx-5xx            | */*                |
+
 
 ## Delete
 
@@ -72,8 +77,8 @@ package main
 import(
 	"github.com/conductorone/conductorone-sdk-go/pkg/models/shared"
 	conductoronesdkgo "github.com/conductorone/conductorone-sdk-go"
-	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"context"
+	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"log"
 )
 
@@ -84,11 +89,11 @@ func main() {
             Oauth: "<YOUR_OAUTH_HERE>",
         }),
     )
-    request := operations.C1APISystemlogV1ExportServiceDeleteRequest{
-        ExportID: "<value>",
-    }
+
     ctx := context.Background()
-    res, err := s.Export.Delete(ctx, request)
+    res, err := s.Export.Delete(ctx, operations.C1APISystemlogV1ExportServiceDeleteRequest{
+        ExportID: "<value>",
+    })
     if err != nil {
         log.Fatal(err)
     }
@@ -106,13 +111,16 @@ func main() {
 | `request`                                                                                                                          | [operations.C1APISystemlogV1ExportServiceDeleteRequest](../../pkg/models/operations/c1apisystemlogv1exportservicedeleterequest.md) | :heavy_check_mark:                                                                                                                 | The request object to use for the request.                                                                                         |
 | `opts`                                                                                                                             | [][operations.Option](../../pkg/models/operations/option.md)                                                                       | :heavy_minus_sign:                                                                                                                 | The options for this request.                                                                                                      |
 
-
 ### Response
 
 **[*operations.C1APISystemlogV1ExportServiceDeleteResponse](../../pkg/models/operations/c1apisystemlogv1exportservicedeleteresponse.md), error**
+
+### Errors
+
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
 | sdkerrors.SDKError | 4xx-5xx            | */*                |
+
 
 ## Get
 
@@ -126,8 +134,8 @@ package main
 import(
 	"github.com/conductorone/conductorone-sdk-go/pkg/models/shared"
 	conductoronesdkgo "github.com/conductorone/conductorone-sdk-go"
-	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"context"
+	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"log"
 )
 
@@ -138,11 +146,11 @@ func main() {
             Oauth: "<YOUR_OAUTH_HERE>",
         }),
     )
-    request := operations.C1APISystemlogV1ExportServiceGetRequest{
-        ExportID: "<value>",
-    }
+
     ctx := context.Background()
-    res, err := s.Export.Get(ctx, request)
+    res, err := s.Export.Get(ctx, operations.C1APISystemlogV1ExportServiceGetRequest{
+        ExportID: "<value>",
+    })
     if err != nil {
         log.Fatal(err)
     }
@@ -160,13 +168,16 @@ func main() {
 | `request`                                                                                                                    | [operations.C1APISystemlogV1ExportServiceGetRequest](../../pkg/models/operations/c1apisystemlogv1exportservicegetrequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
 | `opts`                                                                                                                       | [][operations.Option](../../pkg/models/operations/option.md)                                                                 | :heavy_minus_sign:                                                                                                           | The options for this request.                                                                                                |
 
-
 ### Response
 
 **[*operations.C1APISystemlogV1ExportServiceGetResponse](../../pkg/models/operations/c1apisystemlogv1exportservicegetresponse.md), error**
+
+### Errors
+
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
 | sdkerrors.SDKError | 4xx-5xx            | */*                |
+
 
 ## List
 
@@ -180,8 +191,8 @@ package main
 import(
 	"github.com/conductorone/conductorone-sdk-go/pkg/models/shared"
 	conductoronesdkgo "github.com/conductorone/conductorone-sdk-go"
-	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"context"
+	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"log"
 )
 
@@ -192,9 +203,9 @@ func main() {
             Oauth: "<YOUR_OAUTH_HERE>",
         }),
     )
-    request := operations.C1APISystemlogV1ExportServiceListRequest{}
+
     ctx := context.Background()
-    res, err := s.Export.List(ctx, request)
+    res, err := s.Export.List(ctx, operations.C1APISystemlogV1ExportServiceListRequest{})
     if err != nil {
         log.Fatal(err)
     }
@@ -212,13 +223,16 @@ func main() {
 | `request`                                                                                                                      | [operations.C1APISystemlogV1ExportServiceListRequest](../../pkg/models/operations/c1apisystemlogv1exportservicelistrequest.md) | :heavy_check_mark:                                                                                                             | The request object to use for the request.                                                                                     |
 | `opts`                                                                                                                         | [][operations.Option](../../pkg/models/operations/option.md)                                                                   | :heavy_minus_sign:                                                                                                             | The options for this request.                                                                                                  |
 
-
 ### Response
 
 **[*operations.C1APISystemlogV1ExportServiceListResponse](../../pkg/models/operations/c1apisystemlogv1exportservicelistresponse.md), error**
+
+### Errors
+
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
 | sdkerrors.SDKError | 4xx-5xx            | */*                |
+
 
 ## Update
 
@@ -232,8 +246,8 @@ package main
 import(
 	"github.com/conductorone/conductorone-sdk-go/pkg/models/shared"
 	conductoronesdkgo "github.com/conductorone/conductorone-sdk-go"
-	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"context"
+	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"log"
 )
 
@@ -244,11 +258,11 @@ func main() {
             Oauth: "<YOUR_OAUTH_HERE>",
         }),
     )
-    request := operations.C1APISystemlogV1ExportServiceUpdateRequest{
-        ExportID: "<value>",
-    }
+
     ctx := context.Background()
-    res, err := s.Export.Update(ctx, request)
+    res, err := s.Export.Update(ctx, operations.C1APISystemlogV1ExportServiceUpdateRequest{
+        ExportID: "<value>",
+    })
     if err != nil {
         log.Fatal(err)
     }
@@ -266,10 +280,12 @@ func main() {
 | `request`                                                                                                                          | [operations.C1APISystemlogV1ExportServiceUpdateRequest](../../pkg/models/operations/c1apisystemlogv1exportserviceupdaterequest.md) | :heavy_check_mark:                                                                                                                 | The request object to use for the request.                                                                                         |
 | `opts`                                                                                                                             | [][operations.Option](../../pkg/models/operations/option.md)                                                                       | :heavy_minus_sign:                                                                                                                 | The options for this request.                                                                                                      |
 
-
 ### Response
 
 **[*operations.C1APISystemlogV1ExportServiceUpdateResponse](../../pkg/models/operations/c1apisystemlogv1exportserviceupdateresponse.md), error**
+
+### Errors
+
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
 | sdkerrors.SDKError | 4xx-5xx            | */*                |
