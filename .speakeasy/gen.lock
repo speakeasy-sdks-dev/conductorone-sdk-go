@@ -318,9 +318,11 @@ generatedFiles:
   - /pkg/models/shared/policystep.go
   - /pkg/models/shared/policystepinstance.go
   - /pkg/models/shared/policysteps.go
+  - /pkg/models/shared/policystepsinput.go
   - /pkg/models/shared/provision.go
   - /pkg/models/shared/provisioninstance.go
   - /pkg/models/shared/provisionpolicy.go
+  - /pkg/models/shared/provisionpolicyinput.go
   - /pkg/models/shared/provisiontarget.go
   - /pkg/models/shared/reassignedaction.go
   - /pkg/models/shared/reassignedbyerroraction.go
@@ -718,11 +720,14 @@ generatedFiles:
   - docs/pkg/models/shared/annotations.md
   - docs/pkg/models/shared/app.md
   - docs/pkg/models/shared/appaccessrequestdefaults.md
+  - docs/pkg/models/shared/appaccessrequestdefaults1.md
   - docs/pkg/models/shared/appactionsservicegeneratereportrequest.md
   - docs/pkg/models/shared/appactionsservicegeneratereportresponse.md
   - docs/pkg/models/shared/appentitlement.md
   - docs/pkg/models/shared/appentitlementdurationunset.md
   - docs/pkg/models/shared/appentitlementexpandmask.md
+  - docs/pkg/models/shared/appentitlementinput.md
+  - docs/pkg/models/shared/appentitlementinput1.md
   - docs/pkg/models/shared/appentitlementref.md
   - docs/pkg/models/shared/appentitlementreference.md
   - docs/pkg/models/shared/appentitlementsearchservicesearchrequest.md
@@ -735,6 +740,7 @@ generatedFiles:
   - docs/pkg/models/shared/appentitlementwithexpired.md
   - docs/pkg/models/shared/appentitlementwithuserbindings.md
   - docs/pkg/models/shared/appgroupapproval.md
+  - docs/pkg/models/shared/appinput.md
   - docs/pkg/models/shared/appownerapproval.md
   - docs/pkg/models/shared/apppopulationreport.md
   - docs/pkg/models/shared/apppopulationreportstate.md
@@ -758,10 +764,12 @@ generatedFiles:
   - docs/pkg/models/shared/appusagecontrols.md
   - docs/pkg/models/shared/appuser.md
   - docs/pkg/models/shared/appuserexpandmask.md
+  - docs/pkg/models/shared/appuserinput.md
   - docs/pkg/models/shared/appuserserviceupdaterequest.md
   - docs/pkg/models/shared/appuserserviceupdateresponse.md
   - docs/pkg/models/shared/appuserserviceupdateresponseexpanded.md
   - docs/pkg/models/shared/appuserstatus.md
+  - docs/pkg/models/shared/appuserstatusinput.md
   - docs/pkg/models/shared/appusertype.md
   - docs/pkg/models/shared/appuserview.md
   - docs/pkg/models/shared/attributetype.md
@@ -781,6 +789,7 @@ generatedFiles:
   - docs/pkg/models/shared/connector.md
   - docs/pkg/models/shared/connectorcredential.md
   - docs/pkg/models/shared/connectorexpandmask.md
+  - docs/pkg/models/shared/connectorinput.md
   - docs/pkg/models/shared/connectorprovision.md
   - docs/pkg/models/shared/connectorservicecreatedelegatedrequest.md
   - docs/pkg/models/shared/connectorservicecreaterequest.md
@@ -839,6 +848,7 @@ generatedFiles:
   - docs/pkg/models/shared/erroredaction.md
   - docs/pkg/models/shared/expanded.md
   - docs/pkg/models/shared/exporter.md
+  - docs/pkg/models/shared/exporterinput.md
   - docs/pkg/models/shared/exporterref.md
   - docs/pkg/models/shared/exporterstate.md
   - docs/pkg/models/shared/exportservicecreaterequest.md
@@ -895,6 +905,7 @@ generatedFiles:
   - docs/pkg/models/shared/marker.md
   - docs/pkg/models/shared/multistep.md
   - docs/pkg/models/shared/oauth2authorizedas.md
+  - docs/pkg/models/shared/oauth2authorizedasinput.md
   - docs/pkg/models/shared/outcome.md
   - docs/pkg/models/shared/payload.md
   - docs/pkg/models/shared/payloadpolicyapprovalstep.md
@@ -908,6 +919,7 @@ generatedFiles:
   - docs/pkg/models/shared/personalclientservicecreaterequest.md
   - docs/pkg/models/shared/personalclientservicecreateresponse.md
   - docs/pkg/models/shared/policy.md
+  - docs/pkg/models/shared/policyinput.md
   - docs/pkg/models/shared/policyinstance.md
   - docs/pkg/models/shared/policypolicytype.md
   - docs/pkg/models/shared/policypostactions.md
@@ -916,6 +928,7 @@ generatedFiles:
   - docs/pkg/models/shared/policystepinstance.md
   - docs/pkg/models/shared/policystepinstancestate.md
   - docs/pkg/models/shared/policysteps.md
+  - docs/pkg/models/shared/policystepsinput.md
   - docs/pkg/models/shared/policytype.md
   - docs/pkg/models/shared/policytypes.md
   - docs/pkg/models/shared/processing.md
@@ -923,6 +936,7 @@ generatedFiles:
   - docs/pkg/models/shared/provisioninstance.md
   - docs/pkg/models/shared/provisioninstancestate.md
   - docs/pkg/models/shared/provisionpolicy.md
+  - docs/pkg/models/shared/provisionpolicyinput.md
   - docs/pkg/models/shared/provisiontarget.md
   - docs/pkg/models/shared/reassignedaction.md
   - docs/pkg/models/shared/reassignedbyerroraction.md
@@ -935,6 +949,7 @@ generatedFiles:
   - docs/pkg/models/shared/removeappownerresponse.md
   - docs/pkg/models/shared/requestcatalog.md
   - docs/pkg/models/shared/requestcatalogexpandmask.md
+  - docs/pkg/models/shared/requestcataloginput.md
   - docs/pkg/models/shared/requestcatalogmanagementserviceaddaccessentitlementsrequest.md
   - docs/pkg/models/shared/requestcatalogmanagementserviceaddaccessentitlementsresponse.md
   - docs/pkg/models/shared/requestcatalogmanagementserviceaddappentitlementsrequest.md
@@ -971,6 +986,7 @@ generatedFiles:
   - docs/pkg/models/shared/responsetest.md
   - docs/pkg/models/shared/restartaction.md
   - docs/pkg/models/shared/role.md
+  - docs/pkg/models/shared/roleinput.md
   - docs/pkg/models/shared/rule.md
   - docs/pkg/models/shared/searchappentitlementswithexpiredresponse.md
   - docs/pkg/models/shared/searchappresourcetypesrequest.md
@@ -1045,11 +1061,16 @@ generatedFiles:
   - docs/pkg/models/shared/taskstates.md
   - docs/pkg/models/shared/tasktype.md
   - docs/pkg/models/shared/tasktypecertify.md
+  - docs/pkg/models/shared/tasktypecertifyinput.md
   - docs/pkg/models/shared/tasktypegrant.md
+  - docs/pkg/models/shared/tasktypegrantinput.md
   - docs/pkg/models/shared/tasktypegrantoutcome.md
+  - docs/pkg/models/shared/tasktypeinput.md
   - docs/pkg/models/shared/tasktypeoffboarding.md
+  - docs/pkg/models/shared/tasktypeoffboardinginput.md
   - docs/pkg/models/shared/tasktypeoffboardingoutcome.md
   - docs/pkg/models/shared/tasktyperevoke.md
+  - docs/pkg/models/shared/tasktyperevokeinput.md
   - docs/pkg/models/shared/tasktyperevokeoutcome.md
   - docs/pkg/models/shared/taskview.md
   - docs/pkg/models/shared/updateappentitlementrequest.md
@@ -1086,6 +1107,7 @@ generatedFiles:
   - docs/pkg/models/shared/waitinstancestate.md
   - docs/pkg/models/shared/webhook.md
   - docs/pkg/models/shared/webhookapproval.md
+  - docs/pkg/models/shared/webhookinput.md
   - docs/pkg/models/shared/webhookinstance.md
   - docs/pkg/models/shared/webhookinstancestate.md
   - docs/pkg/models/shared/webhookprovision.md
