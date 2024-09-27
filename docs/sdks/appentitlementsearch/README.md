@@ -1,6 +1,8 @@
 # AppEntitlementSearch
 (*AppEntitlementSearch*)
 
+## Overview
+
 ### Available Operations
 
 * [Search](#search) - Search
@@ -49,13 +51,16 @@ func main() {
 | `request`                                                                                                              | [shared.AppEntitlementSearchServiceSearchRequest](../../pkg/models/shared/appentitlementsearchservicesearchrequest.md) | :heavy_check_mark:                                                                                                     | The request object to use for the request.                                                                             |
 | `opts`                                                                                                                 | [][operations.Option](../../pkg/models/operations/option.md)                                                           | :heavy_minus_sign:                                                                                                     | The options for this request.                                                                                          |
 
-
 ### Response
 
 **[*operations.C1APIAppV1AppEntitlementSearchServiceSearchResponse](../../pkg/models/operations/c1apiappv1appentitlementsearchservicesearchresponse.md), error**
+
+### Errors
+
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
 | sdkerrors.SDKError | 4xx-5xx            | */*                |
+
 
 ## SearchAppEntitlementsWithExpired
 
@@ -69,8 +74,8 @@ package main
 import(
 	"github.com/conductorone/conductorone-sdk-go/pkg/models/shared"
 	conductoronesdkgo "github.com/conductorone/conductorone-sdk-go"
-	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"context"
+	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"log"
 )
 
@@ -81,12 +86,12 @@ func main() {
             Oauth: "<YOUR_OAUTH_HERE>",
         }),
     )
-    request := operations.C1APIAppV1AppEntitlementSearchServiceSearchAppEntitlementsWithExpiredRequest{
-        AppEntitlementID: "<value>",
-        AppID: "<value>",
-    }
+
     ctx := context.Background()
-    res, err := s.AppEntitlementSearch.SearchAppEntitlementsWithExpired(ctx, request)
+    res, err := s.AppEntitlementSearch.SearchAppEntitlementsWithExpired(ctx, operations.C1APIAppV1AppEntitlementSearchServiceSearchAppEntitlementsWithExpiredRequest{
+        AppEntitlementID: "<id>",
+        AppID: "<id>",
+    })
     if err != nil {
         log.Fatal(err)
     }
@@ -104,10 +109,12 @@ func main() {
 | `request`                                                                                                                                                                                              | [operations.C1APIAppV1AppEntitlementSearchServiceSearchAppEntitlementsWithExpiredRequest](../../pkg/models/operations/c1apiappv1appentitlementsearchservicesearchappentitlementswithexpiredrequest.md) | :heavy_check_mark:                                                                                                                                                                                     | The request object to use for the request.                                                                                                                                                             |
 | `opts`                                                                                                                                                                                                 | [][operations.Option](../../pkg/models/operations/option.md)                                                                                                                                           | :heavy_minus_sign:                                                                                                                                                                                     | The options for this request.                                                                                                                                                                          |
 
-
 ### Response
 
 **[*operations.C1APIAppV1AppEntitlementSearchServiceSearchAppEntitlementsWithExpiredResponse](../../pkg/models/operations/c1apiappv1appentitlementsearchservicesearchappentitlementswithexpiredresponse.md), error**
+
+### Errors
+
 | Error Object       | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
 | sdkerrors.SDKError | 4xx-5xx            | */*                |

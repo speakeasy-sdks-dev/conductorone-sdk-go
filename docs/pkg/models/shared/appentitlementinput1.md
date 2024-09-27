@@ -1,4 +1,4 @@
-# AppEntitlementInput
+# AppEntitlementInput1
 
 The app entitlement represents one permission in a downstream App (SAAS) that can be granted. For example, GitHub Read vs GitHub Write.
 
