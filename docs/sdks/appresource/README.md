@@ -1,6 +1,8 @@
 # AppResource
 (*AppResource*)
 
+## Overview
+
 ### Available Operations
 
 * [Get](#get) - Get
@@ -18,8 +20,8 @@ package main
 import(
 	"github.com/conductorone/conductorone-sdk-go/pkg/models/shared"
 	conductoronesdkgo "github.com/conductorone/conductorone-sdk-go"
-	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"context"
+	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"log"
 )
 
@@ -30,13 +32,13 @@ func main() {
             Oauth: "<YOUR_OAUTH_HERE>",
         }),
     )
-    request := operations.C1APIAppV1AppResourceServiceGetRequest{
-        AppID: "<value>",
-        AppResourceTypeID: "<value>",
-        ID: "<id>",
-    }
+
     ctx := context.Background()
-    res, err := s.AppResource.Get(ctx, request)
+    res, err := s.AppResource.Get(ctx, operations.C1APIAppV1AppResourceServiceGetRequest{
+        AppID: "<id>",
+        AppResourceTypeID: "<id>",
+        ID: "<id>",
+    })
     if err != nil {
         log.Fatal(err)
     }
@@ -54,13 +56,15 @@ func main() {
 | `request`                                                                                                                  | [operations.C1APIAppV1AppResourceServiceGetRequest](../../pkg/models/operations/c1apiappv1appresourceservicegetrequest.md) | :heavy_check_mark:                                                                                                         | The request object to use for the request.                                                                                 |
 | `opts`                                                                                                                     | [][operations.Option](../../pkg/models/operations/option.md)                                                               | :heavy_minus_sign:                                                                                                         | The options for this request.                                                                                              |
 
-
 ### Response
 
 **[*operations.C1APIAppV1AppResourceServiceGetResponse](../../pkg/models/operations/c1apiappv1appresourceservicegetresponse.md), error**
-| Error Object       | Status Code        | Content Type       |
+
+### Errors
+
+| Error Type         | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 4xx-5xx            | */*                |
+| sdkerrors.SDKError | 4XX, 5XX           | \*/\*              |
 
 ## List
 
@@ -74,8 +78,8 @@ package main
 import(
 	"github.com/conductorone/conductorone-sdk-go/pkg/models/shared"
 	conductoronesdkgo "github.com/conductorone/conductorone-sdk-go"
-	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"context"
+	"github.com/conductorone/conductorone-sdk-go/pkg/models/operations"
 	"log"
 )
 
@@ -86,12 +90,12 @@ func main() {
             Oauth: "<YOUR_OAUTH_HERE>",
         }),
     )
-    request := operations.C1APIAppV1AppResourceServiceListRequest{
-        AppID: "<value>",
-        AppResourceTypeID: "<value>",
-    }
+
     ctx := context.Background()
-    res, err := s.AppResource.List(ctx, request)
+    res, err := s.AppResource.List(ctx, operations.C1APIAppV1AppResourceServiceListRequest{
+        AppID: "<id>",
+        AppResourceTypeID: "<id>",
+    })
     if err != nil {
         log.Fatal(err)
     }
@@ -109,10 +113,12 @@ func main() {
 | `request`                                                                                                                    | [operations.C1APIAppV1AppResourceServiceListRequest](../../pkg/models/operations/c1apiappv1appresourceservicelistrequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
 | `opts`                                                                                                                       | [][operations.Option](../../pkg/models/operations/option.md)                                                                 | :heavy_minus_sign:                                                                                                           | The options for this request.                                                                                                |
 
-
 ### Response
 
 **[*operations.C1APIAppV1AppResourceServiceListResponse](../../pkg/models/operations/c1apiappv1appresourceservicelistresponse.md), error**
-| Error Object       | Status Code        | Content Type       |
+
+### Errors
+
+| Error Type         | Status Code        | Content Type       |
 | ------------------ | ------------------ | ------------------ |
-| sdkerrors.SDKError | 4xx-5xx            | */*                |
+| sdkerrors.SDKError | 4XX, 5XX           | \*/\*              |
