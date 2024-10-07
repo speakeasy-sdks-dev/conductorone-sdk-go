@@ -3,8 +3,8 @@ id: 92b09ddd-c177-4138-92d3-695ede152b21
 management:
   docChecksum: e49541dc90bd8886baad8802e2238349
   docVersion: 0.1.0-alpha
-  speakeasyVersion: 1.405.6
-  generationVersion: 2.428.1
+  speakeasyVersion: internal
+  generationVersion: 2.434.4
   releaseVersion: 1.21.0
   configChecksum: c9aabe3bb6067b449c442ab1f6f5d3b1
   repoURL: https://github.com/ConductorOne/conductorone-sdk-go.git
