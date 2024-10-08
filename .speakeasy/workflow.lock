@@ -1,4 +1,4 @@
-speakeasyVersion: 1.405.6
+speakeasyVersion: internal
 sources:
     my-source:
         sourceNamespace: my-source
