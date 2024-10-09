@@ -17,7 +17,6 @@ ConductorOne API: The ConductorOne API is a HTTP API for managing ConductorOne r
 * [Server Selection](#server-selection)
 * [Custom HTTP Client](#custom-http-client)
 * [Authentication](#authentication)
-* [Special Types](#special-types)
 <!-- End Table of Contents [toc] -->
 
 <!-- Start SDK Installation [installation] -->
